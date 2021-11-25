@@ -1,6 +1,6 @@
 # language: pt
 
-@RemoverProduto
+@removerProduto
 Funcionalidade: Remover produto
   I want to use this template for my feature file
 

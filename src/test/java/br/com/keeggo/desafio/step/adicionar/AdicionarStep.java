@@ -3,7 +3,7 @@
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.WebDriver;
 
-import br.com.keeggo.desafio.cadastrar.usuario.CadastroPage;
+import br.com.keeggo.desafio.adicionar.produto.AdicionarProdutoPage;
 import br.com.keeggo.desafio.login.LoginPage;
 import io.cucumber.java.es.Dado;
 import io.cucumber.java.pt.Entao;
@@ -11,8 +11,7 @@ import io.cucumber.java.pt.Quando;
 
 public class AdicionarStep {
 	
-	private CadastroPage CadastroPage;
-	private br.com.keeggo.desafio.adicionar.produto.AdicionarProdutoPage AdicionarProdutoPage;
+	private AdicionarProdutoPage AdicionarProdutoPage;
 	private LoginPage LoginPage;
 	private Object driver;
 	
@@ -20,6 +19,7 @@ public class AdicionarStep {
 	@Dado("Inicia login")
 	public void iniciarCadastro() {
 		this.LoginPage = new LoginPage();
+		this.AdicionarProdutoPage = new AdicionarProdutoPage();
 	}
 	
 	@Entao("preencho dados de login")
@@ -43,7 +43,7 @@ public class AdicionarStep {
 	}
 	
 	@Entao("Adiciono produto ao carrinho")
-	public void adiciono_produto(WebDriver browser) {
-		this.AdicionarProdutoPage.adicionoProduto(browser);
+	public void adiciono_produto() throws InterruptedException {
+		this.AdicionarProdutoPage.adicionoProduto();
 	}
 }

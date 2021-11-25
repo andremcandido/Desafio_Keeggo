@@ -1,6 +1,6 @@
 # language: pt
 
-@AdicionarProduto
+@adicionarProduto
 Funcionalidade: Adicionar Produto
   I want to use this template for my feature file
 

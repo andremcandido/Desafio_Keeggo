@@ -24,7 +24,7 @@ public class CadastroPage {
 		browser.findElement(By.xpath("//*[@id=\"signin2\"]")).click();
 		Thread.sleep(5000);
 		
-		browser.findElement(By.xpath("//*[@id=\"sign-username\"]")).sendKeys("teste54625");
+		browser.findElement(By.xpath("//*[@id=\"sign-username\"]")).sendKeys("teste546295");
 		browser.findElement(By.xpath("//*[@id=\"sign-password\"]")).sendKeys("teste");
 		browser.findElement(By.xpath("//*[@id=\"signInModal\"]/div/div/div[3]/button[2]")).click();
 		

@@ -26,7 +26,7 @@ public class CadastrarUsuario {
 	@Test
 	public void deveriaEfetuarCadastroComDadosValidos () throws InterruptedException {
 		Thread.sleep(2000);
-		paginaDeCadastro.preencheFormularioDeCadastro("teste54625","teste");
+		paginaDeCadastro.preencheFormularioDeCadastro("teste54632","teste");
 		
 		Assertions.assertTrue(paginaDeCadastro.isPaginaDeCadastro());
 	}

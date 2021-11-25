@@ -14,7 +14,7 @@ public class LoginPage {
 		this.browser = new ChromeDriver();
 		this.browser.navigate().to(URL_LOGIN);
 	}
-
+ 
 	public void fechar() {
 		this.browser.quit();
 	}

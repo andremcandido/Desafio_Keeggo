@@ -10,19 +10,18 @@ import br.com.keeggo.desafio.remover.produto.RemoverProdutoPage;
 import io.cucumber.java.es.Dado;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
-import br.com.keeggo.desafio.cadastrar.usuario.CadastroPage;
+
 
 public class RemoverStep {
 	
-	private CadastroPage CadastroPage;
 	private LoginPage LoginPage;
-	private RemoverProdutoPage removerProdutoPage;
+	private RemoverProdutoPage RemoverProdutoPage;
 
 	@Dado("Inicia login")
 	public void iniciarCadastro() {
 		this.LoginPage = new LoginPage();
+		this.RemoverProdutoPage = new RemoverProdutoPage();
 	}
-	
 	
 	@Entao("preencho dados de login")
 	public void preencho_campos() throws InterruptedException {
@@ -41,12 +40,12 @@ public class RemoverStep {
 	
 	@Quando("abro o carrinho")
 	public void abro_carrinho() throws InterruptedException {
-		this.removerProdutoPage.abreCarrinho();
-		Thread.sleep(9000);
+		this.RemoverProdutoPage.abreCarrinho();
+		Thread.sleep(5000);
 	}
 	
-	@Entao("removo produto ao carrinho")
+		@Entao("removo produto ao carrinho")
 	public void removo_produto() throws InterruptedException {
-		this.removerProdutoPage.removerProduto();
+		this.RemoverProdutoPage.RemoverProduto();
 	}
 }

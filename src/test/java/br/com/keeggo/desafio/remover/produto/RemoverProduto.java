@@ -36,7 +36,7 @@ public class RemoverProduto {
 		
 		Assertions.assertTrue(paginaDeLogin.isPaginaDeLogin());
 		Thread.sleep(5000);
-		removerProduto.removerProduto();
+		removerProduto.RemoverProduto();
 			
 		}
 

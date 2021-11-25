@@ -31,7 +31,7 @@ public class AdicionarProduto {
 		
 		Assertions.assertTrue(paginaDeLogin.isPaginaDeLogin());
 		Thread.sleep(5000);
-		adicionarProduto.adicionoProduto(null);
+		adicionarProduto.adicionoProduto();
 						
 		}
 }

@@ -6,7 +6,9 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "classpath:features/AdicionarProduto.feature", glue = "br.com.keeggo.desafio.step.adicionar", tags = "@AdicionarProduto")
+@CucumberOptions(features = "classpath:features/adicionarProduto.feature",
+				 glue = "br.com.keeggo.desafio.step.adicionar", 
+				 tags = "@adicionarProduto")
 public class Runner {
 
 }

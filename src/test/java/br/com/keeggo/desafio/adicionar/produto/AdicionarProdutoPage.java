@@ -1,12 +1,11 @@
 package br.com.keeggo.desafio.adicionar.produto;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebDriver;
 
-public class AdicionarProdutoPage {
+import br.com.keeggo.desafio.login.LoginPage;
 
-	private By browser;
+public class AdicionarProdutoPage {
 
 	public AdicionarProdutoPage(Object driver) {
 	}
@@ -15,11 +14,13 @@ public class AdicionarProdutoPage {
 	}
 
 	public void selecionoProduto() throws InterruptedException {
-		browser.findElement((SearchContext) By.xpath("//*[@id=\"tbodyid\"]/div[1]/div/div/h4/a")).click();
 		Thread.sleep(5000);
+		LoginPage.browser.findElement(By.xpath("//*[@id=\"tbodyid\"]/div[1]/div/a/img")).click();
+		
 	}
 
-	public void adicionoProduto(WebDriver browser)  {
-		browser.findElement(By.xpath("//*[@id=\\\"tbodyid\\\"]/div[2]/div/a")).click();
+	public void adicionoProduto() throws InterruptedException  {
+		Thread.sleep(5000);
+		LoginPage.browser.findElement(By.xpath("/html/body/div[5]/div/div[2]/div[2]/div/a")).click();
 	}
 }
